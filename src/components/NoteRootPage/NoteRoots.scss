@@ -1,0 +1,51 @@
+.rootContainer {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    .notePad_container {
+        width: 80%;
+        background: #e1ebe4;
+        margin-top: 2em;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all ease 0.5s;
+    }
+}
+.notePad_container::before {
+    border-style: solid;
+    border-width: 0 100px 100px 0;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.no_notes_text{
+    height: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.text_area_styles{
+    width: 80%;
+    border-radius: 10px;
+    height: 80%;
+    &:focus-visible{
+        transition: 0.5s;
+        outline: none;
+    }
+}
+.add_icon{
+    &:hover{
+        color: cornflowerblue;
+    }
+    @media(min-width:500px){
+    position: absolute;
+    top: -2px;
+    right: -35px;
+    }
+    font-size: 28px;
+   
+}
